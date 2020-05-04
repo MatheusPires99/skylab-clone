@@ -11,6 +11,7 @@ import { Container, Content, LeftContent, RightContent } from "./styles";
 
 interface HeaderProps {
   hasGoBack?: boolean;
+  // goBackLink?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ hasGoBack }) => {

@@ -1,0 +1,49 @@
+{
+  "starter": [
+    {
+      "id": "1",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1566444110414.png",
+      "title": "Curso JavaScript",
+      "modules": 4,
+      "classes_number": 23,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "2",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1566444881250.png",
+      "title": "Curso JavaScript ES6",
+      "modules": 4,
+      "classes_number": 22,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "3",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564681946529.svg",
+      "title": "Node.js",
+      "modules": 1,
+      "classes_number": 14,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "4",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564682281422.svg",
+      "title": "ReactJS",
+      "modules": 1,
+      "classes_number": 10,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 30
+    },
+    {
+      "id": "5",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564682425906.svg",
+      "title": "React Native",
+      "modules": 1,
+      "classes_number": 11,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 0
+    }
+  ]
+}

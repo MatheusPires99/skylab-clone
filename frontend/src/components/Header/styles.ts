@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { lighten } from "polished";
 
-export const Container = styled.div`
+export const Container = styled.header`
   background: #111116;
   width: 100%;
   height: 80px;

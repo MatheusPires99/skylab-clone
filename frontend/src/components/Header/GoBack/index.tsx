@@ -4,6 +4,10 @@ import { MdArrowBack } from "react-icons/md";
 
 import { Container } from "./styles";
 
+// interface GoBackProps {
+//   goBackLink: string;
+// }
+
 const GoBack: React.FC = () => {
   return (
     <Container>
