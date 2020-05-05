@@ -24,6 +24,20 @@ export const LeftContent = styled.div`
   align-items: center;
 `;
 
+export const BackToPreviousPage = styled.div`
+  margin-left: 56px;
+
+  display: flex;
+  align-items: center;
+
+  span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+`;
+
 export const RightContent = styled.div`
   display: flex;
   align-items: center;

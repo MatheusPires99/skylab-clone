@@ -41,7 +41,7 @@ const Starter: React.FC = () => {
 
   return (
     <>
-      <Header hasGoBack />
+      <Header goBackLink="/" />
       <Container>
         <Content>
           <Sidebar>

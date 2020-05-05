@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MdNotifications } from "react-icons/md";
+import { MdNotifications, MdArrowBack } from "react-icons/md";
 
 import RocketseatLogo from "../../assets/rocketseat-logo.svg";
 import Avatar from "../../assets/avatar.jpg";
 
-import GoBack from "./GoBack";
-
-import { Container, Content, LeftContent, RightContent } from "./styles";
+import {
+  Container,
+  Content,
+  LeftContent,
+  BackToPreviousPage,
+  RightContent,
+} from "./styles";
 
 interface HeaderProps {
-  hasGoBack?: boolean;
-  // goBackLink?: string;
+  goBackLink?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ hasGoBack }) => {
+const Header: React.FC<HeaderProps> = ({ goBackLink }) => {
   return (
     <Container>
       <Content>
@@ -23,7 +26,14 @@ const Header: React.FC<HeaderProps> = ({ hasGoBack }) => {
             <img src={RocketseatLogo} alt="Rocketseat" />
           </Link>
 
-          {hasGoBack && <GoBack />}
+          {goBackLink && (
+            <BackToPreviousPage>
+              <Link to={goBackLink}>
+                <MdArrowBack color="#fff" />
+                <span>Voltar</span>
+              </Link>
+            </BackToPreviousPage>
+          )}
         </LeftContent>
 
         <RightContent>
