@@ -38,6 +38,10 @@ export const Content = styled.div`
     margin-bottom: 24px;
   }
 
+  > span:nth-child(3) {
+    margin-bottom: 32px;
+  }
+
   > span:nth-child(4) {
     position: absolute;
     bottom: 24px;

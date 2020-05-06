@@ -11,28 +11,28 @@ const Loading: React.FC = () => {
         highlightColor="rgba(135, 134, 139, 0.1)"
       >
         <Content>
-          <Skeleton height={85} width={85} />
+          <Skeleton circle height={120} width={120} />
           <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={320} />
-          <Skeleton height={24} width={100} />
+          <Skeleton height={16} width={320} />
+          <Skeleton height={16} width={100} />
         </Content>
         <Content>
-          <Skeleton height={85} width={85} />
+          <Skeleton circle height={120} width={120} />
           <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={320} />
-          <Skeleton height={24} width={100} />
+          <Skeleton height={16} width={320} />
+          <Skeleton height={16} width={100} />
         </Content>
         <Content>
-          <Skeleton height={85} width={85} />
+          <Skeleton circle height={120} width={120} />
           <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={320} />
-          <Skeleton height={24} width={100} />
+          <Skeleton height={16} width={320} />
+          <Skeleton height={16} width={100} />
         </Content>
         <Content>
-          <Skeleton height={85} width={85} />
+          <Skeleton circle height={120} width={120} />
           <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={320} />
-          <Skeleton height={24} width={100} />
+          <Skeleton height={16} width={320} />
+          <Skeleton height={16} width={100} />
         </Content>
       </SkeletonTheme>
     </Container>
