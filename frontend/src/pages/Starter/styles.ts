@@ -158,7 +158,8 @@ const ClassTypeVariations = {
 
 export const Class = styled.div<ClassProps>`
   background: rgba(17, 17, 22, 0.8);
-  border: 3px solid #111116;
+  background-image: url("https://skylab.rocketseat.com.br/static/3b7ad20da6a7ef2aa482d4cd5aedf9d4.png");
+  border: 3px solid #0b0a0d;
   border-bottom: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

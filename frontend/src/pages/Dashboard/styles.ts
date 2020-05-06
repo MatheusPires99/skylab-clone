@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
   padding: 70px 30px 30px;
 `;
 
@@ -98,9 +97,12 @@ const journeyTypeVariations = {
 
 export const Journey = styled.div<JourneyProps>`
   background: rgba(17, 17, 22, 0.8);
+  background-image: url("https://skylab.rocketseat.com.br/static/40a7d53e92496bfa7622792225a98d1c.png");
+  background-size: cover;
   border-radius: 8px;
   padding: 64px;
-  border: 2px solid #111116;
+  border: 2px solid #0b0a0d;
+  height: 655px;
   transition: all 0.2s;
 
   display: flex;
@@ -114,7 +116,7 @@ export const Journey = styled.div<JourneyProps>`
     !props.active &&
     css`
       &:hover {
-        border-color: #111116;
+        border-color: #0b0a0d;
       }
     `}
 

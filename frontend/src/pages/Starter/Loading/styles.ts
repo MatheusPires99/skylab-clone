@@ -9,6 +9,8 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   background: rgba(17, 17, 22, 0.8);
+  background-image: url("https://skylab.rocketseat.com.br/static/3b7ad20da6a7ef2aa482d4cd5aedf9d4.png");
+  border: 3px solid #0b0a0d;
   width: 700px;
   height: 380px;
   border-radius: 4px;
