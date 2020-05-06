@@ -2,12 +2,14 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  height: 100vh;
+  padding-top: 150px;
 `;
 
 export const Content = styled.div`
   max-width: 1166px;
   width: 100%;
-  margin: 104px auto 0;
+  margin: 0 auto;
 
   display: flex;
 `;
@@ -126,7 +128,7 @@ const ClassTypeVariations = {
 };
 
 export const Class = styled.div<ClassProps>`
-  background: #111116;
+  background: rgba(17, 17, 22, 0.8);
   border: 3px solid #111116;
   border-bottom: 0px;
   border-top-left-radius: 4px;

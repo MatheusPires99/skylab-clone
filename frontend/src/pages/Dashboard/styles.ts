@@ -2,12 +2,14 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  height: 100vh;
+  padding-top: 150px;
 `;
 
 export const Content = styled.div`
   max-width: 1366px;
   width: 100%;
-  margin: 72px auto 0;
+  margin: 0px auto;
 `;
 
 export const Journeys = styled.div`
@@ -90,7 +92,7 @@ const journeyTypeVariations = {
 };
 
 export const Journey = styled.div<JourneyProps>`
-  background: #111116;
+  background: rgba(17, 17, 22, 0.8);
   border-radius: 8px;
   padding: 64px;
   border: 2px solid #111116;
