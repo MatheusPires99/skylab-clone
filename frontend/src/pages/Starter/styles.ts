@@ -3,7 +3,11 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
+  padding: 100px 30px 30px;
+
+  @media (max-width: 768px) {
+    padding: 25px 20px 20px;
+  }
 `;
 
 export const Content = styled.div`
@@ -12,6 +16,10 @@ export const Content = styled.div`
   margin: 0 auto;
 
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Sidebar = styled.aside`
@@ -20,10 +28,31 @@ export const Sidebar = styled.aside`
   width: 325px;
   height: calc(100vh - 80px);
 
+  @media (max-width: 768px) {
+    top: 0px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 72px;
+    }
+  }
+
   p {
     color: #87868b;
     line-height: 1.5;
     margin-top: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin: 0px;
+      padding-left: 16px;
+    }
   }
 `;
 
@@ -161,21 +190,39 @@ export const Class = styled.div<ClassProps>`
     width: 100%;
   }
 
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   img {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     width: 87px;
     height: 80px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 
   h1 {
     color: #fff;
     margin-bottom: 24px;
     font-size: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   section {
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     div {
       display: flex;
@@ -183,6 +230,11 @@ export const Class = styled.div<ClassProps>`
 
       & + div {
         margin-left: 24px;
+
+        @media (max-width: 768px) {
+          margin-left: 0px;
+          margin-top: 8px;
+        }
       }
 
       svg {

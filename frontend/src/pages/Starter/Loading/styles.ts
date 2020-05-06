@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const Content = styled.div`
   width: 100%;
   background: rgba(17, 17, 22, 0.8);
   width: 700px;
@@ -12,6 +18,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
   & + div {
     margin-top: 100px;
