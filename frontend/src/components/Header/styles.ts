@@ -42,6 +42,10 @@ export const BackToPreviousPage = styled.div`
   display: flex;
   align-items: center;
 
+  @media (max-width: 768px) {
+    margin-left: 24px;
+  }
+
   span {
     color: #fff;
     font-size: 15px;

@@ -6,27 +6,33 @@ import { Container, Content } from "./styles";
 const Loading: React.FC = () => {
   return (
     <Container>
-      <SkeletonTheme color="#202020" highlightColor="#333">
+      <SkeletonTheme color="#1D1C24" highlightColor="#19181F">
         <Content>
           <Skeleton circle height={48} width={48} />
+
           <Skeleton circle height={150} width={150} />
-          <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={280} />
-          <Skeleton height={24} width={180} />
+
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
         </Content>
         <Content>
           <Skeleton circle height={48} width={48} />
+
           <Skeleton circle height={150} width={150} />
-          <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={280} />
-          <Skeleton height={24} width={180} />
+
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
         </Content>
         <Content>
           <Skeleton circle height={48} width={48} />
+
           <Skeleton circle height={150} width={150} />
-          <Skeleton height={24} width={180} />
-          <Skeleton height={24} width={280} />
-          <Skeleton height={24} width={180} />
+
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
+          <Skeleton height={16} width={220} />
         </Content>
       </SkeletonTheme>
     </Container>

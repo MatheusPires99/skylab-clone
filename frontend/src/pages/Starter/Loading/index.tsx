@@ -6,7 +6,7 @@ import { Container, Content } from "./styles";
 const Loading: React.FC = () => {
   return (
     <Container>
-      <SkeletonTheme color="#202020" highlightColor="#333">
+      <SkeletonTheme color="#1D1C24" highlightColor="#19181F">
         <Content>
           <Skeleton height={85} width={85} />
           <Skeleton height={24} width={180} />

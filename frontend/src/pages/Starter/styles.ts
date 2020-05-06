@@ -5,8 +5,8 @@ export const Container = styled.div`
   height: 100vh;
   padding: 100px 30px 30px;
 
-  @media (max-width: 768px) {
-    padding: 25px 20px 20px;
+  @media (max-width: 1120px) {
+    padding: 20px;
   }
 `;
 
@@ -17,7 +17,7 @@ export const Content = styled.div`
 
   display: flex;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     flex-direction: column;
   }
 `;
@@ -28,18 +28,28 @@ export const Sidebar = styled.aside`
   width: 325px;
   height: calc(100vh - 80px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     top: 0px;
-    width: 100%;
+    width: 700px;
     height: auto;
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    img {
+      margin-right: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0 0 32px;
     justify-content: space-between;
 
     img {
-      width: 72px;
+      width: 70px;
     }
   }
 
@@ -157,7 +167,7 @@ const ClassTypeVariations = {
 };
 
 export const Class = styled.div<ClassProps>`
-  background: rgba(17, 17, 22, 0.8);
+  background: #0b0a0d;
   background-image: url("https://skylab.rocketseat.com.br/static/3b7ad20da6a7ef2aa482d4cd5aedf9d4.png");
   border: 3px solid #0b0a0d;
   border-bottom: 0px;

@@ -12,7 +12,7 @@ export const Container = styled.div`
     grid-column-gap: 24px;
     grid-row-gap: 24px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1120px) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, minmax(300px, auto));
     }
@@ -25,6 +25,7 @@ export const Content = styled.div`
   background-image: url("https://skylab.rocketseat.com.br/static/40a7d53e92496bfa7622792225a98d1c.png");
   border: 3px solid #0b0a0d;
   height: 650px;
+  padding: 64px;
   border-radius: 4px;
   position: relative;
 
@@ -33,9 +34,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     width: 100%;
-    margin-bottom: 40px;
+    height: auto;
+    padding: 64px 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
   }
 
   > span:nth-child(1) {

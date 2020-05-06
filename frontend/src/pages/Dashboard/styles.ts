@@ -3,6 +3,10 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   width: 100%;
   padding: 70px 30px 30px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 export const Content = styled.div`
@@ -18,7 +22,7 @@ export const Journeys = styled.div`
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, minmax(300px, auto));
   }
@@ -96,7 +100,7 @@ const journeyTypeVariations = {
 };
 
 export const Journey = styled.div<JourneyProps>`
-  background: rgba(17, 17, 22, 0.8);
+  background: #0b0a0d;
   background-image: url("https://skylab.rocketseat.com.br/static/40a7d53e92496bfa7622792225a98d1c.png");
   background-size: cover;
   border-radius: 8px;
@@ -128,10 +132,13 @@ export const Journey = styled.div<JourneyProps>`
       }
     `}
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     height: auto;
-    padding: 30px;
     padding: 64px 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
   }
 
   button {
@@ -140,7 +147,7 @@ export const Journey = styled.div<JourneyProps>`
     border-style: solid;
     border-radius: 4px;
     font-size: 15px;
-    padding: 16px;
+    padding: 15px;
     color: #222;
     transition: all 0.2s;
 
@@ -168,15 +175,21 @@ export const JourneyContent = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1120px) {
       margin-bottom: 50px;
     }
   }
 
   div {
+    height: 145px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1120px) {
+      height: auto;
+    }
 
     @media (max-width: 768px) {
       img {
@@ -192,7 +205,7 @@ export const JourneyContent = styled.div`
     line-height: 26px;
     max-width: 270px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1120px) {
       margin-top: 20px;
       font-size: 15px;
     }
