@@ -7,7 +7,13 @@ import GoStack from "../../assets/gostack.svg";
 
 import Header from "../../components/Header";
 
-import { Container, Content, Journeys, Journey } from "./styles";
+import {
+  Container,
+  Content,
+  Journeys,
+  Journey,
+  JourneyContent,
+} from "./styles";
 
 const Dashboard: React.FC = () => {
   return (
@@ -19,43 +25,58 @@ const Dashboard: React.FC = () => {
           <Journeys>
             <Link to="/starter">
               <Journey type="starter" active>
-                <span>01</span>
+                <JourneyContent>
+                  <span>01</span>
 
-                <img src={Starter} alt="Starter" />
+                  <div>
+                    <img src={Starter} alt="Starter" />
+                  </div>
 
-                <p>
-                  <strong>Torne-se um programador desejado</strong>
-                  no mercado com esses cursos gratuitos
-                </p>
+                  <p>
+                    <strong>Torne-se um programador desejado</strong>
+                    no mercado com esses cursos gratuitos
+                  </p>
+                </JourneyContent>
               </Journey>
             </Link>
 
-            <Journey type="lauchbase" active={false}>
-              <span>02</span>
+            <div>
+              <Journey type="lauchbase" active={false}>
+                <JourneyContent>
+                  <span>02</span>
 
-              <img src={Lauchbase} alt="Lauchbase" />
+                  <div>
+                    <img src={Lauchbase} alt="Lauchbase" />
+                  </div>
 
-              <p>
-                <strong>Domine programação do zero</strong>e tenha acesso às
-                melhores oportunidades do mercado
-              </p>
+                  <p>
+                    <strong>Domine programação do zero</strong>e tenha acesso às
+                    melhores oportunidades do mercado
+                  </p>
+                </JourneyContent>
 
-              <button type="button">
-                <strong>Garanta sua vaga </strong>
-                para a próxima turma!
-              </button>
-            </Journey>
+                <button type="button">
+                  <strong>Garanta sua vaga </strong>
+                  para a próxima turma!
+                </button>
+              </Journey>
+            </div>
 
             <Link to="/">
               <Journey type="gostack" active>
-                <span>03</span>
+                <JourneyContent>
+                  <span>03</span>
 
-                <img src={GoStack} alt="GoStack" />
+                  <div>
+                    <img src={GoStack} alt="GoStack" />
+                  </div>
 
-                <p>
-                  <strong>Treinamento imersivo</strong>
-                  nas tecnologias mais modernas de desenvolvimento web e mobile
-                </p>
+                  <p>
+                    <strong>Treinamento imersivo</strong>
+                    nas tecnologias mais modernas de desenvolvimento web e
+                    mobile
+                  </p>
+                </JourneyContent>
               </Journey>
             </Link>
           </Journeys>

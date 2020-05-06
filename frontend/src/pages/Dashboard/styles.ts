@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding-top: 70px;
+  padding: 70px 30px 30px;
 `;
 
 export const Content = styled.div`
@@ -18,6 +18,11 @@ export const Journeys = styled.div`
   grid-template-rows: minmax(650px, auto);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(300px, auto));
+  }
 `;
 
 interface JourneyProps {
@@ -97,12 +102,11 @@ export const Journey = styled.div<JourneyProps>`
   padding: 64px;
   border: 2px solid #111116;
   transition: all 0.2s;
-  height: 650px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   ${(props) => journeyTypeVariations[props.type]}
 
@@ -122,28 +126,10 @@ export const Journey = styled.div<JourneyProps>`
       }
     `}
 
-  span {
-    width: 48px;
-    height: 48px;
-    font-weight: bold;
-    border-radius: 50%;
-    margin-bottom: 105px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  p {
-    text-align: center;
-    margin-top: 55px;
-    color: #87868b;
-    line-height: 26px;
-    max-width: 270px;
-
-    strong {
-      margin-right: 6px;
-    }
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 30px;
+    padding: 64px 48px;
   }
 
   button {
@@ -154,12 +140,63 @@ export const Journey = styled.div<JourneyProps>`
     font-size: 15px;
     padding: 16px;
     color: #222;
-    white-space: nowrap;
     transition: all 0.2s;
 
     &:hover {
       color: #fff;
       background: transparent;
+    }
+  }
+`;
+
+export const JourneyContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  span {
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 55px;
+    color: #87868b;
+    line-height: 26px;
+    max-width: 270px;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    strong {
+      margin-right: 6px;
     }
   }
 `;
