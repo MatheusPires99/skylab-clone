@@ -106,7 +106,7 @@ export const Journey = styled.div<JourneyProps>`
   border-radius: 8px;
   padding: 64px;
   border: 2px solid #0b0a0d;
-  height: 655px;
+  height: 650px;
   transition: all 0.2s;
 
   display: flex;

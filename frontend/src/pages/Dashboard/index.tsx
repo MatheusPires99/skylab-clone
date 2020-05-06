@@ -53,7 +53,10 @@ const Dashboard: React.FC = () => {
           ) : (
             <Journeys>
               {journeys.map((journey) => (
-                <Link to={journey.active ? journey.link_to : "#"}>
+                <Link
+                  key={journey.id}
+                  to={journey.active ? journey.link_to : "#"}
+                >
                   <Journey type={journey.content} active={journey.active}>
                     <JourneyContent>
                       <span>{journey.number}</span>
