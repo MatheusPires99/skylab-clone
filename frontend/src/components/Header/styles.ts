@@ -5,8 +5,14 @@ export const Container = styled.header`
   background: #111116;
   width: 100%;
   height: 80px;
+  padding: 0 30px;
 
   display: flex;
+
+  @media (max-width: 768px) {
+    height: 60px;
+    padding: 0 20px;
+  }
 `;
 
 export const Content = styled.div`
@@ -22,6 +28,12 @@ export const Content = styled.div`
 export const LeftContent = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    img {
+      width: 112px;
+    }
+  }
 `;
 
 export const BackToPreviousPage = styled.div`
@@ -35,6 +47,10 @@ export const BackToPreviousPage = styled.div`
     font-size: 15px;
     margin-left: 8px;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 
@@ -77,6 +93,10 @@ export const RightContent = styled.div`
       display: flex;
       flex-direction: column;
 
+      @media (max-width: 768px) {
+        display: none;
+      }
+
       strong {
         color: #fff;
         margin-bottom: 6px;
@@ -93,6 +113,11 @@ export const RightContent = styled.div`
       height: 56px;
       border-radius: 50%;
       border: 3px solid #7159c1;
+
+      @media (max-width: 768px) {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 `;
