@@ -5,11 +5,6 @@ export const Container = styled.header`
   background: #111116;
   width: 100%;
   height: 80px;
-  position: fixed;
-  top: 0px;
-  z-index: 9999;
-  opacity: 1;
-  visibility: visible;
 
   display: flex;
 `;
