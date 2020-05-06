@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import api from "../../services/api";
 
 import Header from "../../components/Header";
+import Loading from "./Loading";
 
 import {
   Container,
@@ -25,12 +26,17 @@ interface Journey {
 
 const Dashboard: React.FC = () => {
   const [journeys, setJourneys] = useState<Journey[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function loadJourneys(): Promise<void> {
+      setLoading(true);
+
       const response = await api.get("journeys");
 
       setJourneys(response.data);
+
+      setLoading(false);
     }
 
     loadJourneys();
@@ -42,54 +48,36 @@ const Dashboard: React.FC = () => {
 
       <Container>
         <Content>
-          <Journeys>
-            {journeys.map((journey) => (
-              <Link to="/starter">
-                <Journey type={journey.content} active={journey.active}>
-                  <JourneyContent>
-                    <span>{journey.number}</span>
+          {loading ? (
+            <Loading />
+          ) : (
+            <Journeys>
+              {journeys.map((journey) => (
+                <Link to={journey.active ? journey.link_to : "#"}>
+                  <Journey type={journey.content} active={journey.active}>
+                    <JourneyContent>
+                      <span>{journey.number}</span>
 
-                    <div>
-                      <img src={journey.image_url} alt="Skylab" />
-                    </div>
+                      <div>
+                        <img src={journey.image_url} alt="Skylab" />
+                      </div>
 
-                    <p>{journey.description}</p>
+                      <p>{journey.description}</p>
 
-                    {journey.active ? (
-                      <div />
-                    ) : (
-                      <button type="button">
-                        <strong>Garanta sua vaga </strong>
-                        para a próxima turma!
-                      </button>
-                    )}
-                  </JourneyContent>
-                </Journey>
-              </Link>
-            ))}
-
-            {/* <div>
-              <Journey type="lauchbase" active={false}>
-                <JourneyContent>
-                  <span>02</span>
-
-                  <div>
-                    <img src={Lauchbase} alt="Lauchbase" />
-                  </div>
-
-                  <p>
-                    <strong>Domine programação do zero</strong>e tenha acesso às
-                    melhores oportunidades do mercado
-                  </p>
-                </JourneyContent>
-
-                <button type="button">
-                  <strong>Garanta sua vaga </strong>
-                  para a próxima turma!
-                </button>
-              </Journey>
-            </div> */}
-          </Journeys>
+                      {journey.active ? (
+                        <div />
+                      ) : (
+                        <button type="button">
+                          <strong>Garanta sua vaga </strong>
+                          para a próxima turma!
+                        </button>
+                      )}
+                    </JourneyContent>
+                  </Journey>
+                </Link>
+              ))}
+            </Journeys>
+          )}
         </Content>
       </Container>
     </>
