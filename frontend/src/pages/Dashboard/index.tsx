@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Starter from "../../assets/starter.svg";
-import Lauchbase from "../../assets/lauchbase.svg";
-import GoStack from "../../assets/gostack.svg";
+import api from "../../services/api";
 
 import Header from "../../components/Header";
 
@@ -15,7 +13,29 @@ import {
   JourneyContent,
 } from "./styles";
 
+interface Journey {
+  id: number;
+  content: "starter" | "lauchbase" | "gostack";
+  number: number;
+  image_url: string;
+  description: string;
+  link_to: string;
+  active: boolean;
+}
+
 const Dashboard: React.FC = () => {
+  const [journeys, setJourneys] = useState<Journey[]>([]);
+
+  useEffect(() => {
+    async function loadJourneys(): Promise<void> {
+      const response = await api.get("journeys");
+
+      setJourneys(response.data);
+    }
+
+    loadJourneys();
+  }, []);
+
   return (
     <>
       <Header />
@@ -23,24 +43,32 @@ const Dashboard: React.FC = () => {
       <Container>
         <Content>
           <Journeys>
-            <Link to="/starter">
-              <Journey type="starter" active>
-                <JourneyContent>
-                  <span>01</span>
+            {journeys.map((journey) => (
+              <Link to="/starter">
+                <Journey type={journey.content} active={journey.active}>
+                  <JourneyContent>
+                    <span>{journey.number}</span>
 
-                  <div>
-                    <img src={Starter} alt="Starter" />
-                  </div>
+                    <div>
+                      <img src={journey.image_url} alt="Skylab" />
+                    </div>
 
-                  <p>
-                    <strong>Torne-se um programador desejado</strong>
-                    no mercado com esses cursos gratuitos
-                  </p>
-                </JourneyContent>
-              </Journey>
-            </Link>
+                    <p>{journey.description}</p>
 
-            <div>
+                    {journey.active ? (
+                      <div />
+                    ) : (
+                      <button type="button">
+                        <strong>Garanta sua vaga </strong>
+                        para a próxima turma!
+                      </button>
+                    )}
+                  </JourneyContent>
+                </Journey>
+              </Link>
+            ))}
+
+            {/* <div>
               <Journey type="lauchbase" active={false}>
                 <JourneyContent>
                   <span>02</span>
@@ -60,25 +88,7 @@ const Dashboard: React.FC = () => {
                   para a próxima turma!
                 </button>
               </Journey>
-            </div>
-
-            <Link to="/">
-              <Journey type="gostack" active>
-                <JourneyContent>
-                  <span>03</span>
-
-                  <div>
-                    <img src={GoStack} alt="GoStack" />
-                  </div>
-
-                  <p>
-                    <strong>Treinamento imersivo</strong>
-                    nas tecnologias mais modernas de desenvolvimento web e
-                    mobile
-                  </p>
-                </JourneyContent>
-              </Journey>
-            </Link>
+            </div> */}
           </Journeys>
         </Content>
       </Container>
