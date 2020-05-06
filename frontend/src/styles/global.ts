@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import startsBackground from "../assets/starts-background.png";
+
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -15,6 +17,10 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
     background-color: #0B0A0D;
+    background-image: url(${startsBackground});
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   body {

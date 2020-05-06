@@ -32,7 +32,7 @@ export const BackToPreviousPage = styled.div`
 
   span {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 8px;
     font-weight: bold;
   }

@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ goBackLink }) => {
           {goBackLink && (
             <BackToPreviousPage>
               <Link to={goBackLink}>
-                <MdArrowBack color="#fff" />
+                <MdArrowBack color="#fff" size={18} />
                 <span>Voltar</span>
               </Link>
             </BackToPreviousPage>

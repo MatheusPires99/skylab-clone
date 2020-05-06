@@ -2,6 +2,7 @@
   "starter": [
     {
       "id": "1",
+      "content":  "js",
       "image_url": "https://skylab.rocketseat.com.br/api/files/1566444110414.png",
       "title": "Curso JavaScript",
       "modules": 4,
@@ -11,6 +12,7 @@
     },
     {
       "id": "2",
+      "content":  "es6",
       "image_url": "https://skylab.rocketseat.com.br/api/files/1566444881250.png",
       "title": "Curso JavaScript ES6",
       "modules": 4,
@@ -20,6 +22,7 @@
     },
     {
       "id": "3",
+      "content":  "nodejs",
       "image_url": "https://skylab.rocketseat.com.br/api/files/1564681946529.svg",
       "title": "Node.js",
       "modules": 1,
@@ -29,6 +32,7 @@
     },
     {
       "id": "4",
+      "content":  "reactjs",
       "image_url": "https://skylab.rocketseat.com.br/api/files/1564682281422.svg",
       "title": "ReactJS",
       "modules": 1,
@@ -38,6 +42,7 @@
     },
     {
       "id": "5",
+      "content":  "reactnative",
       "image_url": "https://skylab.rocketseat.com.br/api/files/1564682425906.svg",
       "title": "React Native",
       "modules": 1,
