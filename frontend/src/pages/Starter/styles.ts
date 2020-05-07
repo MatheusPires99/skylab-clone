@@ -33,6 +33,7 @@ export const Sidebar = styled.aside`
     width: 700px;
     height: auto;
     margin: 0 auto 32px;
+    position: relative;
 
     display: flex;
     align-items: center;

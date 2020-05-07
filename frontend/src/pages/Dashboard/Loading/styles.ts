@@ -47,6 +47,10 @@ export const Content = styled.div`
   > span:nth-child(1) {
     position: absolute;
     top: 64px;
+
+    @media (max-width: 1120px) {
+      display: none;
+    }
   }
 
   > span:nth-child(2) {
