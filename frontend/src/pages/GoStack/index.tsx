@@ -43,7 +43,7 @@ const GoStack: React.FC = () => {
           ) : (
             <CardContainer>
               {gostackCard.map((card) => (
-                <Card key={card.id}>
+                <Card to="/" key={card.id}>
                   <div>
                     <img src={card.image_url} alt="GoStack" />
 

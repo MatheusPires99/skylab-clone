@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
-  padding: 100px 25px 25px;
+  padding: 70px 25px 25px;
 
   @media (max-width: 1120px) {
     padding: 20px;
@@ -15,6 +15,10 @@ export const Content = styled.div`
   padding: 0 30px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1120px) {
+    padding: 0px;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -25,10 +29,13 @@ export const CardContainer = styled.div`
   grid-column-gap: 24px;
 
   @media (max-width: 1120px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(300px, auto);
+    grid-row-gap: 20px;
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled(Link)`
   background: #0b0a0d;
   background-image: url("https://skylab.rocketseat.com.br/static/40a7d53e92496bfa7622792225a98d1c.png");
   background-size: cover;
@@ -41,6 +48,15 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 1120px) {
+    height: auto;
+    padding: 64px 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+
   &:hover {
     border-color: #04d361;
     transform: translateY(-8px);
@@ -52,6 +68,10 @@ export const Card = styled.div`
 
     align-items: center;
 
+    @media (max-width: 768px) {
+      grid-column: span 1 / auto;
+    }
+
     div {
       width: 240px;
       margin-bottom: 52px;
@@ -62,6 +82,10 @@ export const Card = styled.div`
 
       img {
         width: 240px;
+
+        @media (max-width: 768px) {
+          width: 200px;
+        }
       }
     }
 
@@ -78,6 +102,12 @@ export const Card = styled.div`
 
     align-items: flex-start;
 
+    @media (max-width: 1120px) {
+      display: flex;
+
+      grid-column: auto;
+    }
+
     div {
       margin-bottom: 24px;
 
@@ -88,11 +118,21 @@ export const Card = styled.div`
         font-size: 30px;
         color: #fff;
         margin-left: 16px;
+
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
       }
     }
   }
 
   p {
     color: #87868b;
+    line-height: 25px;
+    max-width: 310px;
+
+    @media (max-width: 1120px) {
+      font-size: 15px;
+    }
   }
 `;

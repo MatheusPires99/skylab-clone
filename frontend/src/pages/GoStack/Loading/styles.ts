@@ -13,6 +13,10 @@ export const Container = styled.div`
 
   @media (max-width: 1120px) {
     padding: 20px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(300px, auto);
+    grid-row-gap: 20px;
   }
 `;
 
@@ -27,6 +31,15 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 1120px) {
+    height: auto;
+    padding: 64px 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 
   &:first-child {
     grid-column: span 1 / auto;
@@ -46,6 +59,12 @@ export const Content = styled.div`
     grid-column: span 2 / auto;
 
     align-items: flex-start;
+
+    @media (max-width: 1120px) {
+      display: flex;
+
+      grid-column: auto;
+    }
 
     > div {
       margin-bottom: 24px;
