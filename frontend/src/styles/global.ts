@@ -21,6 +21,10 @@ export default createGlobalStyle`
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 768px) {
+      background-image: none;
+    }
   }
 
   body {
