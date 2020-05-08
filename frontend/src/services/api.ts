@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://my-json-server.typicode.com/MatheusPires99/skylab-clone",
+  baseURL: "http://localhost:3333",
 });
 
 export default api;
