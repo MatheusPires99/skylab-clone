@@ -12,9 +12,10 @@ interface GostackCard {
   title?: string;
   image_url: string;
   description: string;
+  link_to: string;
 }
 
-const GoStack: React.FC = () => {
+const GoStackDashboard: React.FC = () => {
   const [gostackCard, setGostackCard] = useState<GostackCard[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -43,7 +44,7 @@ const GoStack: React.FC = () => {
           ) : (
             <CardContainer>
               {gostackCard.map((card) => (
-                <Card to="/" key={card.id}>
+                <Card to={card.link_to} key={card.id}>
                   <div>
                     <img src={card.image_url} alt="GoStack" />
 
@@ -61,4 +62,4 @@ const GoStack: React.FC = () => {
   );
 };
 
-export default GoStack;
+export default GoStackDashboard;

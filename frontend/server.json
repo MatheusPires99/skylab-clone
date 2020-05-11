@@ -87,19 +87,22 @@
       "id": "1",
       "title": null,
       "image_url": "https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg",
-      "description": "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile"
+      "description": "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile",
+      "link_to": "/gostack/journey"
     },
     {
       "id": "2",
       "image_url": "https://skylab.rocketseat.com.br/static/03b32205171c12e9ed666a0f79aa6a0a.svg",
       "title": "Bônus",
-      "description": "Aprimore seus estudos com os cursos bônus do Bootcamp"
+      "description": "Aprimore seus estudos com os cursos bônus do Bootcamp",
+      "link_to": "/#"
     },
     {
       "id": "3",
       "image_url": "https://ik.imagekit.io/hwyksvj4iv/help_5u1aCsiR4.svg",
       "title": "Fórum",
-      "description": "Crie tópicos para resolver suas dúvidas e ajduar outros programadores"
+      "description": "Crie tópicos para resolver suas dúvidas e ajduar outros programadores",
+      "link_to": "/#"
     }
   ],
 
