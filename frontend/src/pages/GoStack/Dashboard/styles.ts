@@ -116,7 +116,6 @@ export const Card = styled(Link)`
 
       h1 {
         font-size: 30px;
-        color: #fff;
         margin-left: 16px;
 
         @media (max-width: 768px) {

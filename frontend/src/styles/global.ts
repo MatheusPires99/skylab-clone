@@ -35,6 +35,10 @@ export default createGlobalStyle`
     font: 16px Roboto, sans-serif;
   }
 
+  body, input, button, a {
+    color: #fff;
+  }
+
   a {
     text-decoration: none;
   }

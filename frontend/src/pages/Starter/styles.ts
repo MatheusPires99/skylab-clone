@@ -218,7 +218,6 @@ export const Class = styled.div<ClassProps>`
   }
 
   h1 {
-    color: #fff;
     margin-bottom: 24px;
     font-size: 24px;
 

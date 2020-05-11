@@ -47,7 +47,6 @@ export const BackToPreviousPage = styled.div`
   }
 
   span {
-    color: #fff;
     font-size: 15px;
     margin-left: 8px;
     font-weight: bold;
@@ -80,10 +79,6 @@ export const RightContent = styled.div`
         color: #7159c1;
       }
     }
-
-    svg {
-      color: #fff;
-    }
   }
 
   a {
@@ -102,7 +97,6 @@ export const RightContent = styled.div`
       }
 
       strong {
-        color: #fff;
         margin-bottom: 6px;
       }
 
