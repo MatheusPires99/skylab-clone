@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import api from "../../services/api";
+import api from "../../../services/api";
 
-import Header from "../../components/Header";
+import Header from "../../../components/Header";
 import Loading from "./Loading";
 
 import { Container, Content, CardContainer, Card } from "./styles";
