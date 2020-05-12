@@ -31,6 +31,7 @@ export const MainTitle = styled.div`
 
   h1 {
     font-size: 36px;
+    font-weight: 900;
     line-height: 1.35;
   }
 `;
