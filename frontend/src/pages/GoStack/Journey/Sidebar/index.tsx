@@ -74,7 +74,7 @@ const SideBar: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Cronograma de estudos
+            Cronograma do bootcamp
           </a>
           <a
             href="https://www.notion.so/Desafios-e-recompensas-49a52780fa0844b5bb77b51d4c5b89bf"
