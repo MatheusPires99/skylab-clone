@@ -15,11 +15,12 @@ import {
 
 interface HeaderProps {
   goBackLink?: string;
+  fixed?: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ goBackLink }) => {
+const Header: React.FC<HeaderProps> = ({ goBackLink, fixed }) => {
   return (
-    <Container>
+    <Container fixed={fixed}>
       <Content>
         <LeftContent>
           <Link to="/">

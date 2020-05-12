@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import { lighten } from "polished";
 
-export const Container = styled.header`
+interface ContainerProps {
+  fixed?: boolean;
+}
+
+export const Container = styled.header<ContainerProps>`
   background: #111116;
   width: 100%;
   height: 80px;
   padding: 0 30px;
+  position: ${(props) => props.fixed && "fixed"};
+  z-index: 999;
 
   display: flex;
 

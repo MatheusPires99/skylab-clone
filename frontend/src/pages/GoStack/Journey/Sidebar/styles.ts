@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
   width: 350px;
+  height: 100%;
   background: #202024;
   padding: 32px;
   border-radius: 5px;
+  margin-right: 60px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   section + section {
