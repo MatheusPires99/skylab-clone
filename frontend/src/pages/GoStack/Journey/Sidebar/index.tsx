@@ -1,4 +1,5 @@
 import React from "react";
+import { MdHelpOutline, MdCached } from "react-icons/md";
 
 import avatar from "../../../../assets/avatar.jpg";
 
@@ -6,8 +7,9 @@ import {
   Container,
   UserInfo,
   Inventory,
+  InventoryPopUp,
   UtilsLinks,
-  ExtraInfo,
+  Extra,
 } from "./styles";
 
 const SideBar: React.FC = () => {
@@ -15,15 +17,56 @@ const SideBar: React.FC = () => {
     <Container>
       <UserInfo>
         <img src={avatar} alt="Matheus Pires" />
-        <h3>Matheus Pires</h3>
+        <h2>Matheus Pires</h2>
       </UserInfo>
 
       <Inventory>
-        <h3>Inventário</h3>
+        <h2>Inventário</h2>
+
+        <div className="inventory-items">
+          <div>
+            <img
+              src="https://skylab.rocketseat.com.br/api/files/stickers-rocketseat.svg"
+              alt="Combo: Stickers Rocketseat + GoStack"
+            />
+            <InventoryPopUp>
+              Combo: Stickers Rocketseat + GoStack
+            </InventoryPopUp>
+          </div>
+          <div>
+            <img
+              src="https://skylab.rocketseat.com.br/api/files/reward-5-apps.svg"
+              alt="5 apps com layout para você criar"
+            />
+            <InventoryPopUp>5 apps com layout para você criar</InventoryPopUp>
+          </div>
+          <div>
+            <img
+              src="https://skylab.rocketseat.com.br/api/files/ui-workshop.svg"
+              alt="Workshop de UI com Tiago Luchtenberg"
+            />
+            <InventoryPopUp>
+              Workshop de UI com Tiago Luchtenberg
+            </InventoryPopUp>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
       </Inventory>
 
       <UtilsLinks>
-        <h3>Links úteis</h3>
+        <h2>Links úteis</h2>
 
         <nav>
           <a
@@ -50,7 +93,17 @@ const SideBar: React.FC = () => {
         </nav>
       </UtilsLinks>
 
-      <ExtraInfo />
+      <Extra>
+        <a href="/gostack/journey">
+          <MdHelpOutline size={24} color="#7159c1" />
+          <span>PERGUNTAS TÉCNICAS</span>
+        </a>
+
+        <a href="/gostack/journey">
+          <MdCached size={24} color="#7159c1" />
+          <span>JORNADA ANTIGA</span>
+        </a>
+      </Extra>
     </Container>
   );
 };
