@@ -86,6 +86,8 @@ export const ModuleDetails = styled.div`
   align-items: flex-start;
 
   img {
+    width: 80px;
+    background: #121214;
     margin-right: 32px;
   }
 

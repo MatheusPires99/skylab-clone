@@ -1,19 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1180px;
-  width: 100%;
-  margin: 0 auto;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-
   display: flex;
+
+  .css-si1nq6-SkeletonTheme {
+    width: 100%;
+
+    display: flex;
+  }
 `;
 
 export const Sidebar = styled.aside`
-  width: 350px;
+  min-width: 350px;
   height: 100%;
   background: #202024;
   padding: 32px;
@@ -66,5 +64,78 @@ export const Extra = styled.section`
 
   span + span {
     margin-left: 16px;
+  }
+`;
+
+export const Journey = styled.main`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Nivel = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  & + div {
+    margin-top: 100px;
+  }
+
+  > span {
+    margin-bottom: 48px;
+  }
+`;
+
+export const Module = styled.div`
+  background: #202024;
+  border: 2px solid #202024;
+  border-radius: 5px;
+  padding: 32px;
+
+  & + div {
+    margin-top: 32px;
+  }
+`;
+
+export const ModuleDetails = styled.div`
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: flex-start;
+
+  > span {
+    margin-right: 32px;
+  }
+
+  div {
+    > span:nth-child(1) {
+      span {
+        margin-bottom: 24px;
+      }
+    }
+
+    > span:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+
+      span + span {
+        margin-top: 8px;
+      }
+    }
+  }
+`;
+
+export const PercentageCompleted = styled.div`
+  display: flex;
+  align-items: center;
+
+  > span {
+    display: flex;
+    align-items: center;
+
+    > span {
+      margin-right: 28px;
+    }
   }
 `;

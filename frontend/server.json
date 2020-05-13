@@ -223,7 +223,7 @@
         },
         {
           "id": 7,
-          "image_url": "https://skylab.rocketseat.com.br/api/files/1586777322421.svg",
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1586777614973.svg",
           "title": "Iniciando back-end do app",
           "description": "Nessa etapa vamos continuar os aprendizados com Node.js aproveitando o projeto desenvolvido até agora para começar a trabalhar com conceitos de banco de dados, autenticação, autorização, etc.",
           "percentage_completed": 50,

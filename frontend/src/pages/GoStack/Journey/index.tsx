@@ -56,7 +56,7 @@ const GoStackJourney: React.FC = () => {
 
       setGoStackJourney(response.data);
 
-      setLoading(true);
+      setLoading(false);
     }
 
     loadGoStackJourney();
@@ -78,78 +78,86 @@ const GoStackJourney: React.FC = () => {
 
           <hr />
 
-          <Game>
-            {loading ? <Loading /> : <SideBar />}
+          <>
+            {loading ? (
+              <Loading />
+            ) : (
+              <Game>
+                <SideBar />
 
-            <Journey>
-              {goStackJourney.map((journey) => (
-                <Nivel key={journey.id}>
-                  <h2>{journey.title}</h2>
+                <Journey>
+                  {goStackJourney.map((journey) => (
+                    <Nivel key={journey.id}>
+                      <h2>{journey.title}</h2>
 
-                  {journey.classes.map((journeyClass) => (
-                    <>
-                      <Module key={journeyClass.id}>
-                        <ModuleDetails>
-                          <img
-                            src={journeyClass.image_url}
-                            alt={journeyClass.title}
-                          />
+                      {journey.classes.map((journeyClass) => (
+                        <>
+                          <Module key={journeyClass.id}>
+                            <ModuleDetails>
+                              <img
+                                src={journeyClass.image_url}
+                                alt={journeyClass.title}
+                              />
 
-                          <div>
-                            <div>
-                              <h3>{journeyClass.title}</h3>
-                              <span>{journeyClass.classes_number} aulas</span>
-                            </div>
-                            <p>{journeyClass.description}</p>
-                          </div>
-                        </ModuleDetails>
-
-                        <PercentageCompleted
-                          percentageCompleted={
-                            journeyClass.percentage_completed
-                          }
-                        >
-                          <span>
-                            {journeyClass.percentage_completed}% completo
-                          </span>
-                          <div />
-                        </PercentageCompleted>
-                      </Module>
-
-                      {journeyClass.challenge && (
-                        <Challenge status={journeyClass.challenge.status}>
-                          <h3>{journeyClass.challenge.title}</h3>
-                          <p>{journeyClass.challenge.description}</p>
-
-                          <div className="challenge-status">
-                            <div>
-                              {journeyClass.challenge.status ? (
-                                <>
+                              <div>
+                                <div>
+                                  <h3>{journeyClass.title}</h3>
                                   <span>
-                                    Nota:{" "}
-                                    <strong>
-                                      {journeyClass.challenge.scored}.00
-                                    </strong>
+                                    {journeyClass.classes_number} aulas
                                   </span>
-                                </>
-                              ) : (
-                                <strong>Em análise</strong>
-                              )}
-                            </div>
+                                </div>
+                                <p>{journeyClass.description}</p>
+                              </div>
+                            </ModuleDetails>
 
-                            <div>
-                              <span>Entregue:</span>
-                              <strong>27/04/20</strong>
-                            </div>
-                          </div>
-                        </Challenge>
-                      )}
-                    </>
+                            <PercentageCompleted
+                              percentageCompleted={
+                                journeyClass.percentage_completed
+                              }
+                            >
+                              <span>
+                                {journeyClass.percentage_completed}% completo
+                              </span>
+                              <div />
+                            </PercentageCompleted>
+                          </Module>
+
+                          {journeyClass.challenge && (
+                            <Challenge status={journeyClass.challenge.status}>
+                              <h3>{journeyClass.challenge.title}</h3>
+                              <p>{journeyClass.challenge.description}</p>
+
+                              <div className="challenge-status">
+                                <div>
+                                  {journeyClass.challenge.status ? (
+                                    <>
+                                      <span>
+                                        Nota:{" "}
+                                        <strong>
+                                          {journeyClass.challenge.scored}.00
+                                        </strong>
+                                      </span>
+                                    </>
+                                  ) : (
+                                    <strong>Em análise</strong>
+                                  )}
+                                </div>
+
+                                <div>
+                                  <span>Entregue:</span>
+                                  <strong>27/04/20</strong>
+                                </div>
+                              </div>
+                            </Challenge>
+                          )}
+                        </>
+                      ))}
+                    </Nivel>
                   ))}
-                </Nivel>
-              ))}
-            </Journey>
-          </Game>
+                </Journey>
+              </Game>
+            )}
+          </>
         </Content>
       </Container>
     </>
