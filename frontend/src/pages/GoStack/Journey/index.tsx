@@ -46,12 +46,10 @@ interface Journey {
 
 const GoStackJourney: React.FC = () => {
   const [goStackJourney, setGoStackJourney] = useState<Journey[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadGoStackJourney(): Promise<void> {
-      setLoading(true);
-
       const response = await api.get("gostack-journey");
 
       setGoStackJourney(response.data);
