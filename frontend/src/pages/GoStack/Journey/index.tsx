@@ -4,6 +4,7 @@ import api from "../../../services/api";
 
 import Header from "../../../components/Header";
 import SideBar from "./Sidebar";
+import Loading from "./Loading";
 
 import {
   Container,
@@ -45,12 +46,17 @@ interface Journey {
 
 const GoStackJourney: React.FC = () => {
   const [goStackJourney, setGoStackJourney] = useState<Journey[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function loadGoStackJourney(): Promise<void> {
+      setLoading(true);
+
       const response = await api.get("gostack-journey");
 
       setGoStackJourney(response.data);
+
+      setLoading(true);
     }
 
     loadGoStackJourney();
@@ -73,7 +79,7 @@ const GoStackJourney: React.FC = () => {
           <hr />
 
           <Game>
-            <SideBar />
+            {loading ? <Loading /> : <SideBar />}
 
             <Journey>
               {goStackJourney.map((journey) => (

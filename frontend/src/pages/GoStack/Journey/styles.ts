@@ -69,6 +69,7 @@ export const Module = styled.div`
   border: 2px solid #202024;
   border-radius: 5px;
   padding: 32px;
+  cursor: pointer;
   transition: border-color 0.2s;
 
   & + div {
