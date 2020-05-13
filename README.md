@@ -54,7 +54,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   Dentro desse arquivo, você pode colocar na variável ambiente **REACT_APP_API_URL** duas opções:
 
-  - http://localhost:3333 -> Caso queira rodar o projeto totalmente local. Para isso, também rode o comando: 
+  - http://localhost:3333 -> Caso queira rodar o projeto totalmente local. Para isso, rode o comando: 
   ```bash 
     json-server server.json -p 3333
   ````
