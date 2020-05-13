@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Skylab-Clone" src="https://ik.imagekit.io/hwyksvj4iv/skylab-logo_Npl4-pqEs.svg" width="250px" />
+    <img alt="Skylab-Clone" src="https://ik.imagekit.io/hwyksvj4iv/skylab-clone2_u34QU4CGL.svg" width="300px" />
 </h1>
 
 <p align="center">
