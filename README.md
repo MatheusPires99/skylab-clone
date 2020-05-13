@@ -50,7 +50,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```
 
 ## :gear: Iniciando server
-  Para iniciar o server na aplicação crie um arquivo chamado .env na raiz da pasta frontend
+  Para iniciar o server na aplicação crie um arquivo chamado .env na raiz da pasta frontend.
 
   Dentro desse arquivo, você pode colocar na variável ambiente **REACT_APP_API_URL** duas opções:
 
