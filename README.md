@@ -10,7 +10,7 @@
 </>
 
 <p align="center">
-  <img alt="Skylab-Clone" src="https://res.cloudinary.com/matheuspires/image/upload/v1589337497/skylab-clone_clm3lk.gif" />
+  <img alt="Skylab-Clone" src="https://res.cloudinary.com/matheuspires/image/upload/v1589338040/skylab-clone_pkzuxf.gif" />
   <br />
   <br />
   <a href="https://skylab-clone.netlify.app/">Demo da aplicação</a>
