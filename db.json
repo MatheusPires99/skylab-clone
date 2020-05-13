@@ -1,0 +1,205 @@
+{
+  "journeys": [
+    {
+      "id": "1",
+      "content":  "starter",
+      "number": "01",
+      "image_url": "https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg",
+      "description": "Torne-se um programador desejado no mercado com esses cursos gratuitos",
+      "link_to": "/starter",
+      "active": true
+    },
+    {
+      "id": "2",
+      "content":  "lauchbase",
+      "number": "02",
+      "image_url": "https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg",
+      "description": "Domine programação do zero e tenha acesso às melhores oportunidades do mercado",
+      "link_to": "/lauchbase",
+      "active": false
+    },
+    {
+      "id": "3",
+      "content":  "gostack",
+      "number": "03",
+      "image_url": "https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg",
+      "description": "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile",
+      "link_to": "/gostack",
+      "active": true
+    }
+  ],
+
+  "starter": [
+    {
+      "id": "1",
+      "content":  "js",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1566444110414.png",
+      "title": "Curso JavaScript",
+      "modules": 4,
+      "classes_number": 23,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "2",
+      "content":  "es6",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1566444881250.png",
+      "title": "Curso JavaScript ES6",
+      "modules": 4,
+      "classes_number": 22,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "3",
+      "content":  "nodejs",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564681946529.svg",
+      "title": "Node.js",
+      "modules": 1,
+      "classes_number": 14,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 100
+    },
+    {
+      "id": "4",
+      "content":  "reactjs",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564682281422.svg",
+      "title": "ReactJS",
+      "modules": 1,
+      "classes_number": 10,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 30
+    },
+    {
+      "id": "5",
+      "content":  "reactnative",
+      "image_url": "https://skylab.rocketseat.com.br/api/files/1564682425906.svg",
+      "title": "React Native",
+      "modules": 1,
+      "classes_number": 11,
+      "teacher": "Diego Fernandes",
+      "percentage_completed": 0
+    }
+  ],
+
+  "gostack": [
+    {
+      "id": "1",
+      "title": null,
+      "image_url": "https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg",
+      "description": "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile",
+      "link_to": "/gostack/journey"
+    },
+    {
+      "id": "2",
+      "image_url": "https://skylab.rocketseat.com.br/static/03b32205171c12e9ed666a0f79aa6a0a.svg",
+      "title": "Bônus",
+      "description": "Aprimore seus estudos com os cursos bônus do Bootcamp",
+      "link_to": "/#"
+    },
+    {
+      "id": "3",
+      "image_url": "https://ik.imagekit.io/hwyksvj4iv/help_5u1aCsiR4.svg",
+      "title": "Fórum",
+      "description": "Crie tópicos para resolver suas dúvidas e ajduar outros programadores",
+      "link_to": "/#"
+    }
+  ],
+
+  "gostack-journey": [
+    {
+      "id": 1,
+      "title": "Aquecendo os motores",
+      "classes": [
+        {
+          "id": 1,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1588963419051.svg",
+          "title": "Preparando os Estudos",
+          "description": "Nessa fase vamos conhecer metodologias e técnicas para facilitar o aprendizado, fixar o conhecimento e aplicar tudo isso em nosso desenvolvimento pessoal e profissional. Entederemos também como montar um cronograma de estudos.",
+          "percentage_completed": 100,
+          "classes_number": 6,
+          "challenge": null
+        },
+        {
+          "id": 2,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1585533872109.svg",
+          "title": "Ambiente de Desenvolvimento",
+          "description": "Nessa fase iremos configurar as ferramentas que serão essenciais para construir as aplicações durante a jornada como o nosso editor de código, plugins, tema, extensões do navegador e ferramentas de desenvolvimento.",
+          "percentage_completed": 100,
+          "classes_number": 14,
+          "challenge": {
+            "id": 1,
+            "title": "Organizando seus estudos",
+            "description": "Bora criar um cronograma de estudos e definir seu objetivo.",
+            "status": false,
+            "delivered_date": "15/04/20",
+            "scored": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Nível 01",
+      "classes": [
+        {
+          "id": 3,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1586184608716.svg",
+          "title": "Back-end com Node.js",
+          "description": "Nesse módulo iremos conhecer os primeiros conceitos do Node.js e aplicá-los na construção da nossa primeira aplicação backend.",
+          "percentage_completed": 100,
+          "classes_number": 9,
+          "challenge": {
+            "id": 2,
+            "title": "Conceitos do Node.js",
+            "description": "Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no Node.js!",
+            "status": true,
+            "delivered_date": "15/04/20",
+            "scored": 10
+          }
+        },
+        {
+          "id": 4,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1586184755042.svg",
+          "title": "Front-end com ReactJS",
+          "description": "Agora continuaremos na nossa jornada, conhecendo os primeiros conceitos do ReactJS. Desenvolveremos a nossa primeira aplicação web e vamos conecta-la no backend que criamos no último módulo.",
+          "percentage_completed": 100,
+          "classes_number": 9,
+          "challenge": {
+            "id": 2,
+            "title": "Conceitos do ReactJS",
+            "description": "Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no ReactJS!",
+            "status": true,
+            "delivered_date": "15/04/20",
+            "scored": 10
+          }
+        },
+        {
+          "id": 5,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1586184815619.svg",
+          "title": "Mobile com React Native",
+          "description": "Partimos para o mundo do mobile, conhecendo os conceitos do React Native e desenvolvendo nossa primeira aplicação que irá se conectar com nosso backend.",
+          "percentage_completed": 100,
+          "classes_number": 6,
+          "challenge": {
+            "id": 2,
+            "title": "Conceitos do React Native",
+            "description": "Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no React-Native!",
+            "status": true,
+            "delivered_date": "15/04/20",
+            "scored": 10
+          }
+        },
+        {
+          "id": 6,
+          "image_url": "https://skylab.rocketseat.com.br/api/files/1586185414393.svg",
+          "title": "TypeScript",
+          "description": "Vamos agora aprender os primeiros conceitos de TypeScript e aplicar nos projetos que já desenvolvemos até aqui.",
+          "percentage_completed": 100,
+          "classes_number": 4,
+          "challenge": null
+        }
+      ]
+    }
+  ]
+}
